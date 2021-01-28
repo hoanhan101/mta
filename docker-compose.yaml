@@ -1,0 +1,18 @@
+version: '3.9'
+services:
+
+  redis:
+    container_name: redis
+    image: "redis:alpine"
+    ports:
+      - "6379:6379"
+
+  mta-server:
+    container_name: mta-server
+    image: mta-server:latest
+    ports:
+      - '80:80'
+
+  mta-monitor:
+    container_name: mta-monitor
+    image: mta-monitor:latest

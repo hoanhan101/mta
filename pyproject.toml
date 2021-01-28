@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "mta"
+version = "0.1.0"
+description = ""
+authors = ["Hoanh An <hoanhan101@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.25.1"
+redis= "^3.5.3"
+fastapi = "^0.63.0"
+containerlog= "^0.3.1"
+uvicorn = "^0.13.3"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
